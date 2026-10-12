@@ -100,6 +100,53 @@ body {
   font-size: 0.9rem;
 }
 
+.edit-name-form {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.edit-inputs-container {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.edit-input {
+  padding: 8px;
+  font-size: 1.1rem;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+.edit-buttons-container {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.edit-name-button {
+  background-color: #00bc77;
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.cancel-name-button {
+  background-color: #ccc;
+  color: #333;
+  border: none;
+  padding: 8px 15px;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
 @media (min-width: 920px) {
   .hero {
     height: 400px;
