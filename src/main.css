@@ -71,7 +71,7 @@ body {
 }
 
 .hero {
-  background-image: url('../img/bank-tree.jpeg');
+  background-image: url('../img/bank-tree.webp');
   background-position: 0 -50px;
   background-size: cover;
   background-repeat: no-repeat;
@@ -322,6 +322,86 @@ body {
   background-color: #00bc77;
   color: #fff;
 }
+
+/* Conteneur du formulaire d'édition du profil */
+.edit-name-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.edit-inputs-container {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 100%;
+  max-width: 350px;
+  margin-bottom: 20px;
+}
+
+/* Style de chaque groupe (label + input) */
+.input-wrapper {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.input-wrapper label {
+  font-weight: bold;
+  font-size: 0.9rem;
+  margin-bottom: 5px;
+  color: #2c3e50; /* S'adapte selon ton thème, ou blanc si le fond est sombre */
+}
+
+/* Style des inputs modifiables et non modifiables */
+.edit-input {
+  padding: 8px 12px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Style spécifique pour bien voir les champs désactivés/non modifiables */
+.edit-input.bg-disabled {
+  background-color: #e9ecef;
+  color: #495057;
+  cursor: not-allowed;
+  border: 1px solid #ced4da;
+  opacity: 1; /* Empêche certains navigateurs de rendre le texte trop transparent */
+}
+
+/* Conteneur des boutons Save / Cancel */
+.edit-buttons-container {
+  display: flex;
+  gap: 10px;
+}
+
+.edit-name-button,
+.cancel-name-button {
+  padding: 8px 20px;
+  font-weight: bold;
+  border-radius: 4px;
+  border: 1px solid #00bc77;
+  cursor: pointer;
+}
+
+.edit-name-button {
+  background-color: #00bc77;
+  color: white;
+}
+
+.cancel-name-button {
+  background-color: white;
+  color: #00bc77;
+}
+
+.main-nav-item{
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
 
 @media (min-width: 720px) {
   .account {

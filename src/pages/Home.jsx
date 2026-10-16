@@ -14,7 +14,7 @@ export default function Home() {
             <section className="features">
                 <h2 className="sr-only">Features</h2>
                     <div className="feature-item">
-                        <img src="./img/icon-chat.png" alt="Chat Icon" className="feature-icon" />
+                        <img src="./img/icon-chat.webp" alt="Chat Icon" className="feature-icon" />
                         <h3 className="feature-item-title">You are our #1 priority</h3>
                         <p>
                             Need to talk to a representative? You can get in touch through our
@@ -23,7 +23,7 @@ export default function Home() {
                     </div>
                 <div className="feature-item">
                     <img
-                        src="./img/icon-money.png"
+                        src="./img/icon-money.webp"
                         alt="Chat Icon"
                         className="feature-icon"
                     />
@@ -35,7 +35,7 @@ export default function Home() {
 
                 <div className="feature-item">
                     <img
-                        src="./img/icon-security.png"
+                        src="./img/icon-security.webp"
                         alt="Chat Icon"
                         className="feature-icon"
                     />

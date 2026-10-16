@@ -56,28 +56,44 @@ function User() {
                 ) : (
                     <form onSubmit={handleSave} className="edit-name-form">
                         <div className="edit-inputs-container">
-                            <input
-                                type="text"
-                                value={userName}
-                                onChange={(e) => setUserName(e.target.value)}
-                                placeholder="User Name"
-                                required
-                                className="edit-input"
-                            />
-                            {/* Les champs Prénom et Nom d'état civil ne sont pas modifiables via l'API, on les désactive ou retire */}
-                            <input
-                                type="text"
-                                value={user ? user.firstName : ''}
-                                disabled
-                                className="edit-input bg-disabled"
-                            />
-                            <input
-                                type="text"
-                                value={user ? user.lastName : ''}
-                                disabled
-                                className="edit-input bg-disabled"
-                            />
+                            {/* 1. Champ UserName (Modifiable) */}
+                            <div className="input-wrapper">
+                                <label htmlFor="username">User name:</label>
+                                <input
+                                    type="text"
+                                    id="username"
+                                    value={userName}
+                                    onChange={(e) => setUserName(e.target.value)}
+                                    required
+                                    className="edit-input"
+                                />
+                            </div>
+
+                            {/* 2. Champ Prénom (Désactivé) */}
+                            <div className="input-wrapper">
+                                <label htmlFor="firstname">First name:</label>
+                                <input
+                                    type="text"
+                                    id="firstname"
+                                    value={user ? user.firstName : ''}
+                                    disabled
+                                    className="edit-input bg-disabled"
+                                />
+                            </div>
+
+                            {/* 3. Champ Nom (Désactivé) */}
+                            <div className="input-wrapper">
+                                <label htmlFor="lastname">Last name:</label>
+                                <input
+                                    type="text"
+                                    id="lastname"
+                                    value={user ? user.lastName : ''}
+                                    disabled
+                                    className="edit-input bg-disabled"
+                                />
+                            </div>
                         </div>
+
                         <div className="edit-buttons-container">
                             <button type="submit" className="edit-name-button">
                                 Save
